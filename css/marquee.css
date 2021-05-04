@@ -150,6 +150,7 @@ li {
   white-space: nowrap;
   position: absolute;
   width: 100%;
+  display: inline-block;
   font-family: "led";
   margin: 0;
   top: 0;
