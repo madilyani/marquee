@@ -146,7 +146,7 @@ li {
   background-repeat: repeat;
   position: relative;
 }
-.marquee p {
+.text{
   white-space: nowrap;
   position: absolute;
   width: 100%;
@@ -207,7 +207,7 @@ li {
   .marquee__inner {
     height: 80px;
   }
-  .marquee p {
+  .text {
     font-size: 70px;
     line-height: 70px;
   }
