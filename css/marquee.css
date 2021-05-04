@@ -155,7 +155,8 @@ li {
   margin: 0;
   top: 0;
   font-size: 100px;
-  line-height: 1.3;
+  line-height: 1;
+  float: left;
   text-align: center;
   -moz-transform: translateX(100%);
   -webkit-transform: translateX(100%);
