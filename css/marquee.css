@@ -151,11 +151,10 @@ li {
   position: absolute;
   width: 100%;
   display: block;
-  font-family: "led";
+  /* font-family: "led"; */
   margin: 0;
-  top: 50%;
   font-size: 100px;
-  line-height: 0;
+  line-height: 1;
   vertical-align: center;
   text-align: center;
   -moz-transform: translateX(100%);
