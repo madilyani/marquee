@@ -144,7 +144,7 @@ li {
   background: url(../bg.png);
   background-position: center;
   background-repeat: repeat;
- 
+  position: relative;
 }
 .marquee p {
   white-space: nowrap;
@@ -152,6 +152,7 @@ li {
   width: 100%;
   font-family: "led";
   margin: 0;
+  top: 0;
   font-size: 100px;
   line-height: 100px;
   color: #fff;
