@@ -1,0 +1,220 @@
+@import url(../css/stylesheet.css);
+@font-face {
+  font-family: "led";
+  src: url("../fonts/SerifLEDBoard-7.eot");
+  src: url("../fonts/SerifLEDBoard-7.woff") format("woff"),
+    url("../fonts/SerifLEDBoard-7.otf") format("opentype"),
+    url("../fonts/SerifLEDBoard-7.ttf") format("ttf");
+}
+/*** 
+
+====================================================================
+	Reset
+====================================================================
+
+***/
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+}
+
+button {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*** 
+  ====================================================================
+      Global Settings
+  ====================================================================
+   ***/
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.7em;
+  font-weight: 400;
+  background: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  font-weight: normal;
+  margin: 0px;
+  background: none;
+  line-height: 1.6em;
+}
+
+/* Typography */
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+p {
+  position: relative;
+  line-height: 1.8em;
+}
+
+.auto__container {
+  position: relative;
+  max-width: 1440px;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.example {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+}
+
+.marquee {
+  height: 120px;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  color: #333;
+  -webkit-box-shadow: -1px 1px 16px 6px rgba(138, 53, 36, 1);
+  -moz-box-shadow: -1px 1px 16px 6px rgba(138, 53, 36, 1);
+  box-shadow: -1px 1px 16px 6px rgba(138, 53, 36, 1);
+  margin-bottom: 10px;
+}
+.marquee__inner {
+  background: url(../bg.png);
+  background-position: center;
+  background-repeat: repeat;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  height: 110px;
+}
+.marquee p {
+  white-space: nowrap;
+  position: absolute;
+  width: 100%;
+  font-family: "led";
+  margin: 0;
+  font-size: 100px;
+  line-height: 100px;
+  color: #fff;
+  text-align: center;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -moz-animation: scroll-left 20s linear infinite;
+  -webkit-animation: scroll-left 20s linear infinite;
+  animation: scroll-left 20s linear infinite;
+  color: #ff9e50;
+}
+
+@-moz-keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+
+  100% {
+    -moz-transform: translateX(-350%);
+  }
+}
+
+@-webkit-keyframes scroll-left {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(-350%);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+
+  100% {
+    -moz-transform: translateX(-350%);
+    -webkit-transform: translateX(-350%);
+    transform: translateX(-350%);
+  }
+}
+@media (max-width: 1340px) {
+  .marquee {
+    height: 90px;
+  }
+  .marquee__inner {
+    height: 80px;
+  }
+  .marquee p {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}

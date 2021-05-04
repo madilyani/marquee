@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Serif LED Board-7';
+    src: url('SerifLEDBoard-7.eot');
+    src: url('SerifLEDBoard-7.eot?#iefix') format('embedded-opentype'),
+        url('SerifLEDBoard-7.woff2') format('woff2'),
+        url('SerifLEDBoard-7.woff') format('woff'),
+        url('SerifLEDBoard-7.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
